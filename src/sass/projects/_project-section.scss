@@ -1,18 +1,18 @@
 .project-section{
     h3{
         font-size: 1.5rem;
-       // text-transform: capitalize;
+        text-transform: capitalize;
         //letter-spacing: 1px;
     }
 }
 .font-secondary{
     padding: 0 10px;
 }
-.project-section{
-    h3:first-letter{
-        text-transform: uppercase;
-    }
-}
+// .project-section{
+//     h3:first-letter{
+//         text-transform: uppercase;
+//     }
+// }
 
 .widget:first-child {
     margin-top: 0;

@@ -4,11 +4,101 @@ const DEFAULT_LOCALE = 'ru';
 var currentLocale = localStorage.getItem('locale') || DEFAULT_LOCALE;
 
 $(document).ready(function(){
-    localize();
-    loadLandIndex();
-    logoSwitcher();
-    dateLangSwitcher();
+    // TEMPLATES LOADING FUNCTION
+    let templates = [
+        ['layouts/menu.html', 'main-menu-wc'],
+        ['layouts/header.html', 'header-wc'],
+        ['layouts/footer.html', 'footer-wc']
+    ];
+    
+    const templatesLength = templates.length;
+    let templatesCnt = 0;
+    for(let t of templates){
+        templatesCnt++;
+        loadTemplates(t[0], t[1], templatesCnt == templatesLength, templatesCnt, templatesLength);
+    }
+    
+    function loadTemplates(url, id, isLast, templatesCnt, templatesLength){
+      console.log(url,templatesCnt, templatesLength);
+      $.get(url, function(headerEl) {
+            console.log("loaded url" + url);
+            let headerContainer = document.getElementById(id);
+            if(headerContainer){
+                headerContainer.innerHTML = headerEl; 
+            }
+            if(isLast){
+            console.log("temp ready");
+                templatesReady();
+            }
+      });
+    }
+    
+    function templatesReady(){
+        localize();
+        loadLandIndex();
+        logoSwitcher();
+        dateLangSwitcher();
+        $('.lang-icons a').on('click', function(e){
+            const thisel = $(this);
+            currentLocale = thisel.data('lang');
+            localStorage.setItem('locale', currentLocale);
+            localize();  
+            logoSwitcher(); 
+            dateLangSwitcher(); 
+            e.preventDefault();
+            return false;
+        });
 
+        $(".hamburger").click(function(){
+            $(this).toggleClass("is-active");
+            let act = $(this).hasClass("is-active");
+            if(act){
+                $(".menu-wrap").show(1500);
+                //$(".header-wrap").removeClass("fixed");
+            } else {
+                $('.menu-wrap').hide(1500);
+                //$(".header-wrap").addClass("fixed");
+            }
+        });
+        
+        function myFunction(x){
+            if(x.matches){
+                $('.menu-wrap').css("display", "none");
+                $('.menu-wrap').addClass("mobile-active");
+                $(".menu-wrap").removeClass("p-4");
+            } else {
+                $('.menu-wrap').css("display", "flex");
+                $(".menu-wrap").removeClass("mobile-active");
+                $(".hamburger").removeClass("is-active");
+                $(".menu-wrap").addClass("p-4");
+            }
+        }
+        let x = window.matchMedia("(max-width: 991px)");
+        myFunction(x);
+        x.addListener(myFunction);
+    
+        $(document).scroll(function(){
+            var st = $(this).scrollTop();
+            if(st > 250) {
+                let act = $(".hamburger").hasClass("is-active");
+                if(!act){
+                    $(".header-wrap").addClass('fixed');
+                    $(".stiky-off").css("display", "none");
+                    
+                } else{
+                    $(".header-wrap").removeClass('fixed');
+                    $(".stiky-off").css("display", "flex");
+                    
+                }
+            } else {
+                $(".header-wrap").removeClass('fixed');
+                $(".stiky-off").css("display", "flex");
+            }
+        });
+        
+    }
+
+    // LOCALIZATION FUNCTIONS
     function localize(){
         // MENU HEADER
         $.get('locale/header/' + currentLocale + '.json', function(ans){
@@ -31,16 +121,7 @@ $(document).ready(function(){
         });
 
     }
-    $('.lang-icons a').on('click', function(e){
-        const thisel = $(this);
-        currentLocale = thisel.data('lang');
-        localStorage.setItem('locale', currentLocale);
-        localize();  
-        logoSwitcher(); 
-        dateLangSwitcher(); 
-        e.preventDefault();
-        return false;
-    });
+    
     function loadLandIndex(){
         $("a[data-lang]").on('click', function(e){
             const thisel = $(this);

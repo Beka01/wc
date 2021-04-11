@@ -1,0 +1,36 @@
+{
+    "links":
+[
+    {
+        "url":"index.html"
+    },
+
+    {
+        "url":"leadership.html"
+    },
+
+    {
+        "url":"neighbors.html"
+    },
+
+    {
+        "url":"about.html"
+    },
+
+    {
+        "url":"award.html"
+    },
+
+    {
+        "url":"publications.html"
+    }
+],
+    "texts": {
+        "mp-home-text": "главная",
+        "mp-leader-text": "проект лидерство",
+        "mp-neighbors-text":"проект соседи",
+        "mp-about-text":"о нас",
+        "mp-awards-text":"премия коалиции",
+        "mp-publications-text":"публикации"
+    }
+}

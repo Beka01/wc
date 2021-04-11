@@ -46,3 +46,9 @@ textarea{
     padding-left: 5px;
     color: $section-title-text;
 }
+
+@media (max-width: 991px){
+    .project-button-description {
+        float: right;
+    }
+}

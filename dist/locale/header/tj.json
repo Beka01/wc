@@ -1,0 +1,37 @@
+{
+    "links":
+[
+    {
+        "url":"index.html"
+    },
+
+    {
+        "url":"leadership.html"
+    },
+
+    {
+        "url":"neighbors.html"
+    },
+
+    {
+        "url":"about.html"
+    },
+
+    {
+        "url":"award.html"
+    },
+
+    {
+        "url":"publications.html"
+        
+    }
+],
+    "texts": {
+        "mp-home-text": "асосӣ",
+        "mp-leader-text": "лоиҳаи роҳбарӣ",
+        "mp-neighbors-text":"лоиҳаи ҳамсояҳо",
+        "mp-about-text":"дар бораи мо",
+        "mp-awards-text":"ҷоизаи эътилоф",
+        "mp-publications-text":"нашрияҳо"
+    }
+}
