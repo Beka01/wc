@@ -1,0 +1,36 @@
+{
+    "links":
+[
+    {
+        "url":"index.html"
+    },
+
+    {
+        "url":"leadership.html"
+    },
+
+    {
+        "url":"neighbors.html"
+    },
+
+    {
+        "url":"about.html"
+    },
+
+    {
+        "url":"awards.html"
+    },
+
+    {
+        "url":"publications.html"
+    }
+],
+"texts": {
+    "mp-home-text": "home",
+    "mp-leader-text": "prject leadership",
+    "mp-neighbors-text":"project neighbors",
+    "mp-about-text":"about us",
+    "mp-awards-text":"coalition award",
+    "mp-publications-text":"publications"
+}
+}

@@ -1,0 +1,48 @@
+// .coalition-awards-section{
+//     background-color: #ecf0f1;
+//     padding-bottom: 50px;
+// }
+.award-form-wrapper{
+    padding: 24px 24px;
+}
+.awards-info-wrapper{
+    padding: 24px 24px 24px 6px ;
+}
+.awards-info-title{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.awards-info-descr{
+    p{
+        margin-top: 25px;
+    }
+    
+}
+
+.award-form{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid $section-title-text;
+    height: 39px;
+    padding: 8px 10px;
+    
+}
+#award-form-select{
+    color: $section-title-text;
+}
+textarea{
+    height: 100px !important;
+}
+#btn-form-submit{
+    float: right;
+}
+#btn-form-award{
+    margin-top: 58px;
+}
+
+.award-form-title{
+    padding-left: 5px;
+    color: $section-title-text;
+}

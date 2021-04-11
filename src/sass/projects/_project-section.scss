@@ -1,0 +1,61 @@
+.project-section{
+    h3{
+        font-size: 1.5rem;
+       // text-transform: capitalize;
+        //letter-spacing: 1px;
+    }
+}
+.font-secondary{
+    padding: 0 10px;
+}
+.project-section{
+    h3:first-letter{
+        text-transform: uppercase;
+    }
+}
+
+.widget:first-child {
+    margin-top: 0;
+}
+.widget {
+    position: relative;
+}
+
+.coalition-projects{
+    margin-bottom: 30px;
+}
+.sections-title-text{
+    color: $topnav-main-color;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    padding: 0 0 15px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    h3{
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    ::before{
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        border-left: 0;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #2c2f34;
+        border-top-color: $topnav-main-color;
+    }
+    ::after{
+        content: "";
+        //background: #2c2f34;
+        width: 40px;
+        height: 2px;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        background-color: $topnav-main-color;
+    }
+    
+}

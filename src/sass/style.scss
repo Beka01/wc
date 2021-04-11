@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+@media (min-width: 1440px){
+    .container {
+        max-width: 1320px;
+    }
+}
+
+@import './base/colors';
+@import './header/top-header';
+@import './header/nav-header';
+@import './news/news';
+@import './section-devider/section-devider';
+@import './projects/project-section';
+@import './projects/projects-cards';
+@import './partners/partners';
+@import './award/awards-section';
+@import './members/members';
+@import './footer/prefooter';

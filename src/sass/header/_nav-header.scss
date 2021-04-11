@@ -1,0 +1,85 @@
+
+.menu-wrap{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+}
+.menu-link{
+    color: #444;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.menu-link:hover{
+    text-decoration: none;
+    color: #444;
+}
+.underline {
+    background-image: linear-gradient(120deg, #f1c6be 0%, #f1c6be 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 7px;
+    background-position: 0% 89%;
+    transition: background-size 0.25s ease-in-out;
+    &:hover {
+      background-size: 100% 7px;
+    }
+}
+.active{
+    background-image: linear-gradient(120deg, #f1c6be 0%, #f1c6be 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 7px;
+    background-position: 0% 89%;
+}
+
+@media (max-width: 991px){
+    .mobile-nav{
+        display: flex;
+        max-width: 100%;
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+    }
+    .menu-wrap{
+        display: none;
+        list-style: none;
+        margin: 0;
+        width: 100%;
+        border-top: none;
+        border-bottom: none;
+        //padding-top: 0!important;
+    }
+    .menu-item{
+        position: relative;
+    }
+    .menu-link{
+        display: block;
+        line-height: 22px;
+        padding: 14px 5px;
+        color: #444;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .menu-item:not(:first-child) {
+        border-top: 1px solid #eee;
+    }
+    .underline {
+        background-image: linear-gradient(120deg, #f1c6be 0%, #f1c6be 100%);
+        background-repeat: no-repeat;
+        background-size: 0% 7px;
+        background-position: 0% 89%;
+        transition: background-size 0.25s ease-in-out;
+        &:hover {
+          background-size: 100% 7px;
+        }
+    }
+    .active{
+        background-image: none;
+        color: #F39887;
+    }
+}
+  

@@ -1,0 +1,331 @@
+.header-main {
+    position: relative;
+    background-color: #fff;
+    display: block;
+    height: 290px;
+}
+.header-wrap{
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+}
+.header-wrap.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #E5E5E5;
+    animation-name: navbar-move;
+    animation-duration: 2s;
+    z-index: 6;
+}
+.header-wrap.fixed + .news-content{
+    padding-top: 200px;
+}
+@keyframes navbar-move {
+    from { top: -60px; left: 0; }
+    to   { top: 0px;  }
+//     from {opacity: 0;}
+//   to {opacity: 1;}
+}
+.header-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    max-height: 100%;
+    padding-top: 25px;
+    img{
+        display: block;
+        max-width: 100%;
+        max-height: 120px;
+        border: none;
+        
+    }
+}
+.standart-logo{
+    display: flex;
+    color: #000;
+    font-size: 36px;
+    text-decoration: none;
+    background-color: transparent;
+    
+}
+.date-today {
+    position: relative;
+    margin-top: -1.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    color: #777;
+    
+}
+.devider-text:first-letter{
+    text-transform: uppercase;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px auto;
+    //color: #e5e5e5;
+    width: 100%;
+}
+.divider.divider-center::before {
+    display: block;
+}
+.date-today::after, .date-today::before {
+    content: '';
+    background-color: transparent;
+    height: 0;
+    border-top: 4px double #DDD;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.divider::before {
+    margin-right: .5rem;
+}
+.divider::after {
+    margin-left: .5rem;
+}
+
+.devider-text {
+    position: relative;
+    flex: 0 0 auto;
+    max-width: 100%;
+    text-align: center;
+    width: auto;
+    transition: all .3s ease;
+    
+}
+
+//LEFT SIDE BUTTONS
+.social-icon {
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    background-color: #444;
+    overflow: hidden;
+    text-shadow: none;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    text-align: center!important;
+    cursor: pointer;
+    color: #fff!important;
+    border-color: transparent;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.social-icon i {
+    display: block;
+    position: relative;
+    transition: all .3s ease;
+    line-height: 27px;
+}
+.social-icon:hover {
+    border-color: transparent;
+    outline: none;
+    text-decoration: none;
+}
+
+.social-icon:hover i:first-child {
+    margin-top: -27px;
+}
+
+.si-facebook:hover {
+    background-color: $facebook-color-hover!important;
+}
+.si-twitter:hover {
+    background-color: $twitter-color-hover!important;
+}
+.si-instagram:hover {
+    background-color: $instagram-color-hover!important;
+}
+
+// WRITE SIDE BUTTONS
+.header-misc {
+    position: initial;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-langs img {
+    margin-right: 8px;
+    width: 20px;
+    height: 18px;
+   // vertical-align: middle;
+   // border-style: none;
+}
+
+
+.dropdown-langs .dropdown-toggle::after {
+    position: relative;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f0d7";
+    font-weight: 900;
+    font-size: 13px;
+    top: 3px;
+    border: 0;
+    color: #666;
+    margin-left: -5px;
+}
+.dropdown-langs .dropdown-item {
+    font-size: 14px;
+}
+
+.lang-mp-icon {
+    display: flex;
+    float: right;
+    margin-right: 5px;
+    background: transparent;
+    border: 1px solid #999;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    position: relative;
+   img{
+    position: absolute;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    top: 50%;
+    left: 50%;
+    margin: -12px 0px 0px -12px;
+    
+   }
+   
+}
+.lang-mp-icon:hover{
+    img{
+        height: 22px;
+        width: 22px; 
+        margin: -11px 0px 0px -11px; 
+    }
+}
+.lang-icons{
+    order: 2;
+}
+.hamburger{
+    display: none;
+    width: 18px;
+    
+}
+.line-hamb{
+    width: 18px;
+    height: 2px;
+    background-color: #444;
+    display: block;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+// RESPONSIVE
+@media (max-width: 991px){
+    .header-main {
+        height: 194px;
+        z-index: 6;
+        //margin-bottom: 150px;
+    }
+    
+    #top-first{
+        order: 2;
+
+    }
+    .social-icons{
+        float: right;
+    }
+    #top-second{
+        order: 1;
+    }
+    #top-third{
+        order: 3;
+       // display: flex;
+       justify-content: space-between!important;
+    }
+    .lang-icons{
+        order: 0!important;
+    }
+    .hamburger{
+        display: block;
+        
+    }
+    .hamburger:hover{
+        cursor: pointer;
+    }
+    #hamburger-menu.is-active .line-hamb:nth-child(2){
+        opacity: 0;
+    }
+    #hamburger-menu.is-active .line-hamb:nth-child(1){
+        transform: translateY(7px) rotate(45deg);
+    }
+    #hamburger-menu.is-active .line-hamb:nth-child(3){
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    .logo-wrapper{
+       
+        img{
+            display: block;
+            max-width: 100%;
+            max-height: 90px;
+            border: none;
+        }
+    }
+    .logo-wrapper{
+        padding-top: 35px;
+    }
+    nav{
+        display: none;
+    }
+    .header-wrap{
+        border-bottom: 1px solid #E5E5E5;
+    }
+}
+
+@media (max-width: 767px){
+    .header-main {
+        height: 174px;
+    }
+    .social-icons{
+        display: none;
+    }
+}
+
+@media (max-width: 575px){
+    .header-main {
+        height: 154px;
+    }
+    #top-first{
+        order: 1;
+    }
+    .social-icons{
+        float: right;
+    }
+    #top-second{
+        order: 2;
+    }
+    #top-third{
+        order: 3;
+        justify-content: flex-end!important;
+    }
+    .date-today {
+        font-size: 11px;
+    }
+    .hamburger{
+        margin-left: 15px;
+    }
+}
+@media (max-width: 575px){
+    .header-main {
+        height: 115px;
+    }
+}
+
+
+
+

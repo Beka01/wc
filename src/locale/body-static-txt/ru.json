@@ -1,0 +1,16 @@
+{
+    "texts": {
+        "section-projects-title": "проекты коалиции",
+        "section-members-title": "члены коалиции",
+        "section-awards-title": "премия коалиции",
+
+        "btn-neighbors-txt": "подробнее",
+        "btn-leader-txt": "подробнее",
+
+        "project-title-leader": "проект лидерство",
+
+        "project-title-neighbors": "проект соседи",
+        "news-title-loc": "новости и публикации",
+        "coalition-partners-loc" : "партнеры коалиции:"
+    }
+}

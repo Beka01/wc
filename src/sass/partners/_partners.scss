@@ -1,0 +1,70 @@
+.section {
+    position: relative;
+    width: 100%;
+    margin: 60px 0;
+    padding: 30px 0;
+    background-color: #f9f9f9;
+   // overflow: hidden;
+}
+.section-colored {
+    background-color: #FFEAE6;
+}
+.subscr{
+    color: #444;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+    font-size: 26px;
+    text-align: center;
+}
+.logo-link{
+    //position: relative;
+    max-width: 150px;
+    height: auto;
+    
+    img{
+        //position: absolute;
+        max-width: 100%;
+        height:auto;
+    }
+}
+
+#coalition-partners-loc:first-letter{
+    text-transform: uppercase;
+}
+
+@media (max-width: 1199px){
+    .logo-link{
+        max-width: 100px;
+        height: auto;
+    }
+    .subscr{
+        font-size: 20px;
+    }
+}
+@media (max-width: 991px){
+    .logo-link{
+        max-width: 100px;
+        height: auto;
+    }
+}
+@media (max-width: 767px){
+    .logo-link{
+        max-width: 100px;
+        height: auto;
+    }
+    .partners-wrap{
+        display: block!important;
+        width: 30%;
+        
+        margin: 0 auto;
+    }
+    .subscr{
+        font-size: 25px;
+    }
+}
+@media (max-width: 575px){
+    .subscr{
+        font-size: 20px;
+    }
+}
