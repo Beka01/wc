@@ -44,23 +44,8 @@
     padding: 0;
     height: auto;
     margin-top: 5px;
-    i:nth-child(1){     
-        color: $section-title-text;
-        cursor: pointer;
-        transition: all ease-in-out 150ms;
-        border: 1px solid $section-title-text;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        padding: 0;
-        border-radius: 50%;    
-           
-    }
-    i:nth-child(1):hover{
-        color: $instagram-color-hover;
-        border: 1px solid $instagram-color-hover;
-    }
-    i:nth-child(2) {
+    text-decoration: none;
+    i{
         color: $section-title-text;
         cursor: pointer;
         transition: all ease-in-out 150ms;
@@ -70,28 +55,33 @@
         line-height: 40px;
         padding: 0;
         border-radius: 50%;
+        text-decoration: none;
+    }
+    a:nth-child(1){     
+        text-decoration: none;
+        i:hover{
+            color: $instagram-color-hover;
+            border: 1px solid $instagram-color-hover;
+        }
+    }
+    a:nth-child(2) {
+        text-decoration: none;
         margin: 0 10px;
+        i:hover{
+            color: $facebook-color-hover;
+            border: 1px solid $facebook-color-hover;
+        }
     }
-    i:nth-child(2):hover{
-        color: $facebook-color-hover;
-        border: 1px solid $facebook-color-hover;
-    }
-    i:nth-child(3) {
-        color: $section-title-text;
-        cursor: pointer;
-        transition: all ease-in-out 150ms;
-        border: 1px solid $section-title-text;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        padding: 0;
-        border-radius: 50%;
-    }
-    i:nth-child(3):hover{
-        color: $twitter-color-hover;
-        border: 1px solid $twitter-color-hover;
+   
+    a:nth-child(3) {
+        text-decoration: none;
+        i:hover{
+            color: $twitter-color-hover;
+            border: 1px solid $twitter-color-hover;
+        }
     }
 }
+
 
 .project-button-description {
     a{

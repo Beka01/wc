@@ -1,5 +1,5 @@
 // TITLE
-#neighbors-title{
+.proj-pg-titles{
     background-color: #ecf2f4;
     position: relative;
     padding: 4rem 0;
@@ -16,7 +16,7 @@
     }
     
 }
-.page-title-center {
+.proj-pg-titles {
     text-align: center;
     span{
         margin-top: 20px;
@@ -31,13 +31,32 @@
 }
 
 // CONTENT SECTION
-#projects-news-titles{
+.proj-about-titles{
+    padding-left: 7px;
+    margin-top: 55px;
+}
+.about-proj-text{
+    padding: 0 7px;
+    p{
+        font-size: 18px;
+        line-height: 1.65 !important;
+        color: #555;
+        a {
+          color: #236fd3; 
+          text-decoration: none; 
+        }
+        i{
+            color: #236fd3; 
+        }
+    }
+}
+.project-news-title-text{
     padding-left: 7px;
 }
-#projects-news-titles:first-letter{
+.project-news-title-text:first-letter{
     text-transform: uppercase;
 }
-#neighbors-content {
+.proj-contents {
     position: relative;
     background-color: #fff;
 }
@@ -66,20 +85,50 @@ a.more-link {
     font-size: 19px!important;
 }
 
-
+// MEDIA
+@media (max-width: 991px){
+    .proj-pg-titles{
+        margin-top: 0;
+        h1{
+            font-size: 21px;
+        }
+    }
+    .proj-about-titles{
+        padding-left: 7px;
+        margin-top: 25px;
+    }
+}
 @media (max-width: 767px){
-    #neighbors-title{
-        margin-top: 40px;
+    .hand-mt{
+        margin-top: 15px!important;
+    }
+    .proj-about-titles{
+        padding-left: 7px;
+        margin-top: 15px;
+        font-size: 24px;
+    }
+    .about-proj-text{
+        padding: 0 7px;
+        p{
+            font-size: 16px;
+            line-height: 1.65 !important;
+            color: #555;
+            
+            
+        }
+    }
+    .proj-pg-titles{
+        margin-top: 0px;
         h1{
             font-size: 21px;
         }
     }
     .page-title-center {
-        span{
+        p{
             font-size: 14px;
         }
     }
-    #projects-news-titles{
+    .project-news-title-text{
         font-size: 23px;
         text-align: center;
     }
@@ -88,5 +137,20 @@ a.more-link {
     }
     .mob-style{
         padding: 0 40px;
+    }
+}
+
+@media (max-width: 575px){
+    .proj-pg-titles{
+        margin-top: 25px;
+    }
+    .proj-about-titles{
+        text-align: center;
+    }
+    .about-proj-text{
+        padding: 0 25px;
+        p{
+            font-size: 15px;
+        }
     }
 }

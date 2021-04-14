@@ -57,7 +57,7 @@
 }
 .title-xs{
     h3{
-        font-size: 19px;
+        font-size: 18px;
         line-height: 1.6;
     }
 }
@@ -157,6 +157,25 @@
     text-transform: uppercase;
 }
 
+@media (max-width: 1199px){
+    .title-xs{
+        h3{
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .title-xs{
+        h3{
+            font-size: 18px;
+        }
+    }
+    .grid-inner{
+        width:auto;
+    }
+}
 
 @media (max-width: 767px){
     .title-mobile h3{

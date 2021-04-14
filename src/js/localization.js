@@ -19,15 +19,15 @@ $(document).ready(function(){
     }
     
     function loadTemplates(url, id, isLast, templatesCnt, templatesLength){
-      console.log(url,templatesCnt, templatesLength);
+      //console.log(url,templatesCnt, templatesLength);
       $.get(url, function(headerEl) {
-            console.log("loaded url" + url);
+            //console.log("loaded url" + url);
             let headerContainer = document.getElementById(id);
             if(headerContainer){
                 headerContainer.innerHTML = headerEl; 
             }
             if(isLast){
-            console.log("temp ready");
+            //console.log("temp ready");
                 templatesReady();
             }
       });
