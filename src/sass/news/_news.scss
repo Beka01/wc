@@ -156,3 +156,13 @@
 #news-title-loc:first-letter{
     text-transform: uppercase;
 }
+
+
+@media (max-width: 767px){
+    .title-mobile h3{
+        font-size: 20px!important;
+    }
+    .news-wrap{
+        padding: 0;
+    }
+}

@@ -49,6 +49,16 @@ textarea{
 
 @media (max-width: 991px){
     .project-button-description {
-        float: right;
+        text-align: center;
+        //border-top: 1px solid #444;
+    }
+}
+
+@media (max-width: 767px){
+    .awards-info-wrapper {
+        padding: 0 30px 24px 30px;
+    }
+    .font-secondary{
+        text-align: center;
     }
 }

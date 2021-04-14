@@ -65,3 +65,28 @@ a.more-link {
 .publications-title{
     font-size: 19px!important;
 }
+
+
+@media (max-width: 767px){
+    #neighbors-title{
+        margin-top: 40px;
+        h1{
+            font-size: 21px;
+        }
+    }
+    .page-title-center {
+        span{
+            font-size: 14px;
+        }
+    }
+    #projects-news-titles{
+        font-size: 23px;
+        text-align: center;
+    }
+    .content-title-mob{
+        padding-top: 0!important;
+    }
+    .mob-style{
+        padding: 0 40px;
+    }
+}

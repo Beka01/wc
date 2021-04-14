@@ -6,3 +6,10 @@
     background-color: #f9f9f9;
     overflow: hidden;
 }
+
+@media (max-width: 767px){
+    .section-devider{
+        margin: 45px 0;
+        padding: 26px 0;
+    }
+}
