@@ -1,0 +1,19 @@
+.slick-dots li button:before {
+    color:#444!important; 
+    font-size: 14px;
+}
+.about-gallery-item{
+    position: relative;
+    height: 200px;
+    width: auto;
+    margin-bottom: 25px;
+    img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.gal-wrap{
+    margin-bottom: 80px;
+}

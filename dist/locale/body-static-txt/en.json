@@ -10,12 +10,18 @@
         "btn-leader-txt": "read more",
 
         "project-title-leader": "project «leadership»",
-
         "project-title-neighbors": "project «sosedi»",
+        "projects-about-title" : "about project",
+        "coalition-about-title" : "about us",
+        "project-title-about" : "about coalition",
+        "about-gallery-title" : "photo gallery",
+
         "news-title-loc": "news and publications",
         "coalition-partners-loc" : "сoalition partners:",
 
         "neighbors-descr" : "Media project «SOSEDI» - is a unified creative editorial staff that concluding journalists from  Tajikistan and Uzbekistan.",
+        "leadership-descr" : "LeadersShip is a Tajik youth media group for teenagers from 12-16 years old. Since 2019, they've been making podcasts, stories, caption videos, and comics.",
+        "about-us-descr" : "The Coalition of Women Journalists of Tajikistan is a free association of professionals based on the principles of equality, democracy and the achievement of common goals.",
 
         "projects-news-titles" : "project publications"
     }
